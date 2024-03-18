@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table </title>
+    <style>
+        table {
+            margin: 0 auto; /* This centers the table */
+            border-collapse: collapse;
+            width: 50%; /* Set width to 50% */
+        }
+        th, td {
+            border: 2px solid black; /* Add border */
+            padding: 8px; /* Add padding */
+            text-align: left; /* Align text to the left */
+        }
+        th {
+            background-color: cornflowerblue;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2; /* Alternate row background color */
+        }
+        tfoot tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> Syllabus </h1>
+    <table border="2" width="50%">
+        <thead>
+            <tr style="background-color: cornflowerblue;">
+                <th style="text-align: center;">Sr No.</th>
+                <th style="text-align: center;">Index</th>
+                <th style="text-align: center;">Page No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Introduction</td>
+                <td>1</td>
+            </tr>
+            <tr style="background-color: cornflowerblue;">
+                <td>2.</td>
+                <td>History</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="3">3.</td>
+                <td>Proposed System</td>
+                <td rowspan="3">3</td>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+                <td>Scope</td>
+            </tr>
+            <tr>
+                <td>Object</td>
+            </tr>
+            <tr style="background-color: cornflowerblue;">
+                <td>4.</td>
+                <td>System Planning</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>System Analysis</td>
+                <td>10</td>
+            </tr>
+            <tr style="background-color: cornflowerblue;">
+                <td>6.</td>
+                <td>References</td>
+                <td>15</td>
+            </tr>
+            
+
+        </tbody>
+        <tfoot >
+            <tr>
+                <td colspan="3" style="text-align: center;"> THIS IS OUR SYLLABUS </td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
